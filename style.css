@@ -65,10 +65,10 @@ html{
     bottom: -5px;
     width: 80px;
     height: 3px;
-    background-color: red;
+    background-color: #40A4FF;
 }
 .btn-01{
-    background-color: red;
+    background-color: #40A4FF;
     color: #ffffff;
     border: 2px solid transparent;
     padding: 10px 35px;
@@ -100,7 +100,8 @@ html{
     top: 0;
     width: 100%;
     z-index: 99;
-    background-color: black;
+    
+    background-color: transparent;
 }
 .header .menu-logo{
 
@@ -129,17 +130,32 @@ html{
 .header  .navbar{
     
     padding: 0 15px;
+    
 }
 .header .navbar ul{
     list-style: none;
     margin: 0;
+    margin-right: -50px;
     padding: 0;
+    
 
 
 }
 .header .navbar ul li{
     display: inline-block;
-    margin-left: 30px;
+    
+    margin-right: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;   
+   
+}
+
+.header .navbar ul li:hover{
+    
+  background-color: #40A4FF;  
+  transition: all 1s ease;
+  border-radius: 30px;  
+    
    
 }
 .header .navbar ul li a{
@@ -147,13 +163,11 @@ html{
     font-size: 16px;
     font-weight: 600;
     color: rgb(255, 255, 255);
-    padding: 25px 0;
+    padding: 5px 0;
     display: block;
     transition: all 0.5s ease;
 }
-.header .navbar ul li a:hover{
-    color: red;
-}
+
 
 /* home section */
 *{
@@ -161,12 +175,13 @@ html{
     box-sizing: border-box;
 }
 .home-section{
-    min-height: 100vh;
-    background-color: black;
- background-size: cover;
- background-position: center ;
- position: relative;
- z-index: 1;
+min-height: 100vh;
+background-color: black;
+background-image: url("/images/pxfuel\ \(2\).jpg");
+background-size: cover;
+background-position: center ;
+position: relative;
+z-index: 1;
 }
 
 .home-section:before{
@@ -185,7 +200,7 @@ html{
     position: absolute;
     height: 50px;
     width: 50px;
-    border: 2px solid red;
+    border: 2px solid rgb(0, 170, 255);
     right: 5%;
     top: 20%;
     animation:ani01 5s linear infinite;
@@ -225,7 +240,7 @@ html{
 
 
 .about-section{
-    padding: 80px 0 0;
+    padding: 130px 0 0;
     min-height: 100vh;
     
     background-color: black;
@@ -237,13 +252,14 @@ html{
 
 }
 .about-section .about-img{
-  
+  display: flex;
     flex:0 0 33.33%;
     max-width:33.33%;
     padding:16px;
     filter: grayscale(0%); 
 }
 .about-section .about-img .img-box img{
+    margin-top: 27px;
     width: 100%;
     display: block;
 }
@@ -281,7 +297,7 @@ html{
 /* skill section*/
 
 .skills-section{
-    padding:80px 0 80px;
+    padding:80px 0px 80px 0px;
     min-height: 100vh;
     background-color: black;
     background-size: cover;
@@ -312,7 +328,7 @@ html{
     max-width:66.66%;
    padding-left: 50px;
    color: white;
-   margin-top: 3%;
+   margin-top: -5%;
    
     
    }
@@ -352,50 +368,45 @@ html{
     position: absolute;
     left: 10;
     bottom: 0;
-    background-color:aqua;
+    background-color:#40A4FF;
     height: .25rem;
     border-radius: .5rem;
     z-index: var(--z-back);
   }
-  .skills-section .skills__python{
+
+
+
+
+  .skills-section .skills__100{
+    width: 100%;
+  }
+  .skills-section .skills__90{
     width: 90%;
   }
-  .skills-section .skills__pandas{
+  .skills-section .skills__80{
     width: 80%;
   }
-  .skills-section .skills__numpy{
-    width: 80%;
-  }
-  .skills-section .skills__Scikit-learn{
-    width: 75%;
-  }
-  .skills-section .skills__Matplotlib
-  {
+  .skills-section .skills__70{
     width: 70%;
   }
-  .skills-section .skills__stats
-  {
-    width: 70%;
-  }
-  .skills-section .skills__ML
-  {
-    width: 70%;
-  }
-  .skills-section .skills__Django_mongo
-  {
-    width: 70%;
-  }
-  .skills-section .skills__dash
+  .skills-section .skills__60
   {
     width: 60%;
   }
-
-  .skills-section .blue_prism{
-    width: 80%;
+  .skills-section .skills__50
+  {
+    width: 50%;
   }
-  .skills-section .UiPath{
-    width: 80%;
+  .skills-section .skills__40
+  {
+    width: 40%;
   }
+ 
+  .skills-section .skills__30
+  {
+    width: 30%;
+  }
+ 
  
 /*Project section*/
 
@@ -453,6 +464,9 @@ html{
 }
 .Project-section .Projects-item-inner:hover .overlay{
     background-color: transparent;
+    
+    
+    
 }
 .Project-section .Projects-item-inner .overlay h1{
     color:#ffffff;
@@ -466,13 +480,13 @@ html{
 .Project-section .Projects-item-inner .overlay:hover h1{
     transform: translateX(60px);
     opacity: 0;
+   
 }
 
 
 /*contact section*/
  .contact-section {
-     padding: 50px 0 80px;
-     padding:80px 0 80px;
+     
      min-height: 100vh;
      background-color: black;
      background-size: cover;
@@ -488,7 +502,7 @@ html{
 
  }
  .contact-section .contact-img .img-box{
-	padding:200px 0;
+	padding: 80px 0px 150px 0px;
     background-color: black;
 	background-size: cover;
 	background-position: center;
@@ -531,7 +545,7 @@ html{
 	font-size: 16px;
 	background-color: transparent;
 	border:none;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #40A4FF;
 }
 .contact-section .contact-form .form .input-control:focus{
 	outline: none;
@@ -675,4 +689,5 @@ html{
             padding: 55px 5px;
         }
     }
+    
     
