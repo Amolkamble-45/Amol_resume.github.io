@@ -240,7 +240,7 @@ z-index: 1;
 
 
 .about-section{
-    padding: 130px 0 0;
+    padding: 110px 0 0;
     min-height: 100vh;
     
     background-color: black;
@@ -259,9 +259,10 @@ z-index: 1;
     filter: grayscale(0%); 
 }
 .about-section .about-img .img-box img{
-    margin-top: 27px;
+    margin-top: 86px;
     width: 100%;
     display: block;
+    height: 52%;
 }
 .about-section .about-content{
    
@@ -271,7 +272,7 @@ z-index: 1;
     color: #ffffff;
 }
 .about-section .section-title{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding:0;
     color: #ffffff;
 }
@@ -283,7 +284,7 @@ z-index: 1;
 {
     
   
-  
+
   padding: 15px;
   box-shadow: 0 0 10px;
   
