@@ -663,6 +663,12 @@ z-index: 1;
         overflow: hidden;
         transition: 0.5s;
     }
+    .about-section .about-img .img-box img {
+        margin-top: 86px;
+        width: 100%;
+        display: block;
+        height: 180px;
+    }
 }
 
 
@@ -689,6 +695,14 @@ z-index: 1;
         .contact-section .contact-form .form{
             padding: 55px 5px;
         }
+
+        .about-section .about-img .img-box img {
+            margin-top: 86px;
+            width: 100%;
+            display: block;
+            height: 180px;
+        }
     }
+    
     
     
